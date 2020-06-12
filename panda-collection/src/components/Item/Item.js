@@ -2,9 +2,9 @@ import React from "react";
 import "./Item.scss";
 
 const Item = (props) => (
-  <div class="container">
+  <div className="item-container">
     <img
-      class="itemImg"
+      className="itemImg"
       src={`http://localhost:3000${props.src}`}
       alt="cannot load file"
     ></img>

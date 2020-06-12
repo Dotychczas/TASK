@@ -1,0 +1,27 @@
+#header-container {
+  text-align: center;
+  height: 11vw;
+  width: 100vw;
+
+  :nth-child(2) {
+    height: 80%;
+  }
+   :nth-child(3):not(div) {
+    height: 48%;
+  }
+  #top-header {
+    display: grid;
+    height: 50%;
+    width: 100%;
+    grid-template-columns: repeat(3, 10%);
+    grid-template-rows: 100%;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+  }
+  #bottom-header {
+    background: black;
+    height: 50%;
+    width: 100%;
+  }
+}
