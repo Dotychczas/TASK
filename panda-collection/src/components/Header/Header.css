@@ -1,14 +1,19 @@
-#header-container {
-  text-align: center;
-  height: 11vw;
-  width: 100vw;
+@font-face {
+  font-family: "Lalezar-Regular";
+  src: url("../../fonts/lalezar/Lalezar-Regular.ttf");
 }
 
-#header-container :nth-child(2) {
+#header-container {
+  text-align: center;
+  height: 660px;
+  width: 100%;
+}
+
+#header-container img:nth-child(2) {
   height: 80%;
 }
 
-#header-container :nth-child(3):not(div) {
+#header-container img:nth-child(3) {
   height: 48%;
 }
 
@@ -31,8 +36,21 @@
 }
 
 #header-container #bottom-header {
-  background: black;
+  background: #343434;
+  font-size: 50%;
+  color: white;
   height: 50%;
   width: 100%;
+  font-family: "Lalezar-Regular";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 180px;
 }
 /*# sourceMappingURL=Header.css.map */

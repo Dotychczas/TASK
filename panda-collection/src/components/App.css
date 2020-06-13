@@ -1,14 +1,6 @@
-#item-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (30%)[3];
-      grid-template-columns: repeat(3, 30%);
-  -ms-grid-rows: (auto)[3];
-      grid-template-rows: repeat(3, auto);
-  grid-row-gap: 10px;
-  grid-column-gap: 20px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  text-align: center;
+.main {
+  width: 5120px;
+  height: 4168px;
+  margin: auto;
 }
 /*# sourceMappingURL=App.css.map */

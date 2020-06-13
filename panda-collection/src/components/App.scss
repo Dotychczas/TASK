@@ -1,9 +1,6 @@
-#item-container {
-  display: grid;
-  grid-template-columns: repeat(3, 30%);
-  grid-template-rows: repeat(3, auto);
-  grid-row-gap: 10px;
-  grid-column-gap: 20px;
-  justify-content: space-around;
-  text-align: center;
+$magnitude: 4;
+.main {
+  width: 1280px *$magnitude;
+  height: 1042px *$magnitude;
+  margin: auto;
 }

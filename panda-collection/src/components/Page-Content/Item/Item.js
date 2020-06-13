@@ -9,11 +9,12 @@ const Item = (props) => (
       alt="cannot load file"
     ></img>
     <button>Add to cart</button>
-    <p>
+
+    <div className='item-title'>{props.title}</div>
+    <p className='item-price'>
       {props.currency}
       {props.price}
     </p>
-    <div>{props.title}</div>
   </div>
 );
 export default Item;

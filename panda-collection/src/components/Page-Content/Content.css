@@ -1,0 +1,95 @@
+@font-face {
+  font-family: "Lalezar-Regular";
+  src: url("../../fonts/lalezar/Lalezar-Regular.ttf");
+}
+
+@font-face {
+  font-family: "dejaVu";
+  src: url("../../fonts/dejavu-sans/DejaVuSans.ttf");
+}
+
+.content-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+}
+
+.content-container .filter-title {
+  font-family: "Lalezar-Regular";
+  font-size: 100px;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.content-container .itemImg {
+  background-size: cover;
+  height: 1160px;
+  width: 860px;
+}
+
+.content-container button {
+  width: 100%;
+  height: 140px;
+  color: white;
+  font-size: 4rem;
+  background: #001a4c;
+  font-family: "Lalezar-Regular";
+}
+
+.content-container #item-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (860px)[3];
+      grid-template-columns: repeat(3, 860px);
+  -ms-grid-rows: (1660)[3];
+      grid-template-rows: repeat(3, 1660);
+  grid-row-gap: 10px;
+  grid-column-gap: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  margin: 5%;
+}
+
+.content-container #item-container .item-price {
+  height: 10%;
+  font-size: 70px;
+  font-family: "dejaVu";
+  color: #2e5985;
+  margin-top: 20px;
+}
+
+.content-container #item-container .item-title {
+  font-family: "dejaVu";
+  font-size: 55px;
+  margin: 50px auto 20px auto;
+}
+
+.checkbox-list .filter-list-title {
+  font-family: "Lalezar-Regular";
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.checkbox-list ul > li {
+  font-family: "dejaVu";
+  list-style: none;
+}
+
+.checkbox-list .input_class_checkbox {
+  border: 1px solid #e3e3e3;
+  background-color: #dadada;
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin-right: 40px;
+  font-family: "dejaVu";
+}
+
+.checkbox-list .input_class_checkbox:checked {
+  background-image: url("/designs/assets/images/icons/checked.svg");
+  height: 100%;
+}
+/*# sourceMappingURL=Content.css.map */

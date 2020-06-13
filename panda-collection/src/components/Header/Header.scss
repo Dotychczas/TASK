@@ -1,12 +1,17 @@
+$magnitude: 4;
+@font-face {
+  font-family: "Lalezar-Regular";
+  src: url("../../fonts/lalezar/Lalezar-Regular.ttf");
+}
 #header-container {
   text-align: center;
-  height: 11vw;
-  width: 100vw;
+  height: 165px *$magnitude;
+  width: 100%;
 
-  :nth-child(2) {
+  img:nth-child(2) {
     height: 80%;
   }
-   :nth-child(3):not(div) {
+  img:nth-child(3) {
     height: 48%;
   }
   #top-header {
@@ -20,8 +25,16 @@
     justify-items: center;
   }
   #bottom-header {
-    background: black;
+    background: #343434;
+    font-size: 50%;
+    color: white;
     height: 50%;
     width: 100%;
+    font-family: "Lalezar-Regular";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 180px;
+    
   }
 }
