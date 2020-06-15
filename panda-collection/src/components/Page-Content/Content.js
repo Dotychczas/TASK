@@ -3,10 +3,9 @@ import "./Content.scss";
 import Filter from "./Filter/Filter";
 import Item from "./Item/Item";
 
-
 class Content extends React.Component {
   state = {
-    items: [],
+    items: this.props.items,
   };
   //fetching data from api
   componentDidMount() {
@@ -19,7 +18,9 @@ class Content extends React.Component {
       });
   }
   render() {
+    console.log(this.props.items);
     const items = this.state.items.map((item) => (
+    
       <Item
         key={item.id}
         title={item.title}
@@ -30,10 +31,12 @@ class Content extends React.Component {
     ));
 
     return (
-      <div className="content-container">
-        <Filter />
-        <div id="item-container">{items}</div>
-      </div>
+      <>
+        <div className="content-container">
+          <Filter />
+          <div id="item-container">{items}</div>
+        </div>
+      </>
     );
   }
 }

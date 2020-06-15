@@ -1,11 +1,44 @@
-.burger {
+.menu-open {
+  position: relative;
   top: 5%;
-  left: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 12rem;
-  height: 11rem;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+  :first-child {
+    transform: translateY(0%) rotate(45deg);
+  }
+  :nth-child(2) {
+    transform: translateY(430%) rotate(-45deg);
+  }
+
+  :nth-child(3) {
+    opacity: 0;
+  }
+  div {
+    border-radius: 10px;
+    height: 4px;
+    background: white;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+  }
+}
+
+.menu-close {
+  position: relative;
+  top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40px;
+  height: 30px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -14,7 +47,7 @@
 
   div {
     border-radius: 10px;
-    height: 16px;
+    height: 4px;
     background: black;
     transition: all 0.3s linear;
     position: relative;

@@ -1,14 +1,35 @@
 import React from "react";
 import "./Burger.scss";
+import SideMenu from "../Side-Menu/Side-menu";
 
-const Burger = () => {
-  return (
-    <div className="burger">
-      <div />
-      <div />
-      <div />
-    </div>
-  );
-};
+class Burger extends React.Component {
+  
 
+   state = {
+      isOpen: false,
+    };
+
+
+  closeMenu() {
+   
+    this.setState({ isOpen: this.state.isOpen });
+  }
+
+  render() {
+    console.log(this.state.isOpen)
+
+const isOpen = this.state.isOpen
+    return (
+      <>
+        <SideMenu isOpen={isOpen}/>
+      <div className={isOpen ? "menu-open" : "menu-close"} onClick={ () => this.setState({isOpen: !isOpen})}>
+        <div />
+        <div />
+        <div />
+      </div>
+    
+      </>
+    );
+  }
+}
 export default Burger;

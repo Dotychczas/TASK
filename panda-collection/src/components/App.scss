@@ -1,6 +1,7 @@
-$magnitude: 4;
+
 .main {
-  width: 1280px *$magnitude;
-  height: 1042px *$magnitude;
+  width: 1280px;
+  height: 1042px;
   margin: auto;
+  background-size: contain;
 }

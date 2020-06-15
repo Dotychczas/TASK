@@ -1,4 +1,4 @@
-$magnitude: 4;
+
 
 @font-face {
   font-family: "Lalezar-Regular";
@@ -20,24 +20,22 @@ $magnitude: 4;
 
   .itemImg {
     background-size: cover;
-    height: 290px * $magnitude;
-    width: 215px * $magnitude;
+    height: 290px;
+    width: 215px;
     //width: 100%;
   }
   button {
     width: 100%;
-    height: 35px * $magnitude;
+    height: 35px ;
     color: white;
-    font-size: 4rem;
+    font-size: 1rem;
     background: #001a4c;
     font-family: "Lalezar-Regular";
   }
   #item-container {
     display: grid;
-    grid-template-columns: repeat(3, 215px * $magnitude);
-    grid-template-rows: repeat(3, 415 * $magnitude);
-    // grid-template-columns: repeat(3, 1080px);
-    // grid-template-rows: repeat(3, 1920px);
+    grid-template-columns: repeat(3, 215px);
+    grid-template-rows: repeat(3, 415px);
     grid-row-gap: 10px;
     grid-column-gap: 20px;
     justify-content: space-between;
@@ -45,21 +43,21 @@ $magnitude: 4;
     margin: 5%;
     .item-price {
       height: 10%;
-      font-size: 70px;
+      font-size: 20px;
       font-family: "dejaVu";
       color: #2e5985;
-      margin-top: 20px;
+      margin-top: 10px;
     }
     .item-title {
       font-family: "dejaVu";
-      font-size: 55px;
-      margin: 50px auto 20px auto;
+      font-size: 15px;
+      margin: 15px auto 10px auto;
     }
   }
 }
 .checkbox-list .filter-list-title {
   font-family: "Lalezar-Regular";
-  font-size: 55px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -82,3 +80,5 @@ $magnitude: 4;
     height: 100%;
   }
 }
+
+
