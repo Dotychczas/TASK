@@ -16,7 +16,7 @@ class Burger extends React.Component {
   }
 
   render() {
-    console.log(this.state.isOpen)
+
 
 const isOpen = this.state.isOpen
     return (

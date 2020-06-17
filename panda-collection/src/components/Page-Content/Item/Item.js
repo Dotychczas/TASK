@@ -3,13 +3,18 @@ import "./Item.scss";
 
 class Item extends Component {
   state = {
-    addedToCart: 0,
+    cartCounter: 0,
   };
+
+  // getCartCount() {
+  
+
+  //   this.props.getCartCount(this.state.cartCounter);
+  // }
   render() {
    
-const addedToCart = this.state.addedToCart
+    const addedToCart = this.state.addedToCart;
     return (
-      
       <>
         <div className={addedToCart ? "hide-item" : "show-item"}>
           <img
@@ -17,7 +22,7 @@ const addedToCart = this.state.addedToCart
             src={`http://localhost:3000${this.props.src}`}
             alt="cannot load file"
           ></img>
-          <button  onClick={ this.props.addedToCart +1}>Add to cart</button>
+          {/* <button onClick={() => this.getCartCount()}>Add to cart</button> */}
 
           <div className="item-title">{this.props.title}</div>
           <p className="item-price">

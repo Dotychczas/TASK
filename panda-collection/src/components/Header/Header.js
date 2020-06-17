@@ -10,6 +10,7 @@ class Header extends Component {
   state ={
     cartCount: 3
   }
+
   render(){
     return (
       <>
