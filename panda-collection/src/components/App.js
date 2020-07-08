@@ -22,9 +22,11 @@ class App extends Component {
           items: data,
         });
       });
+     
   }
 
   render() {
+  
     return (
       <div className="main">
         <Header />

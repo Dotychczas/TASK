@@ -8,23 +8,13 @@ class Content extends React.Component {
     items: this.props.items,
     cartCounter: 0,
   };
-  //fetching data from api
-  componentDidMount() {
-    fetch("http://localhost:3000/api/products")
-      .then((response) => response.json())
-      .then((data) => {
-        this.setState({
-          items: data,
-        });
-      });
-  }
+
   getCartCount() {
     this.props.getCartCount(this.state.cartCounter);
-    this.setState({ cartCounter: this.state.cartCounter + 1});
-
+    this.setState({ cartCounter: this.state.cartCounter + 1 });
   }
   render() {
-    const items = this.state.items.map((item) => (
+    const items = this.props.items.map((item) => (
       <Item
         key={item.id}
         title={item.title}
@@ -39,7 +29,7 @@ class Content extends React.Component {
       <>
         <div className="content-container">
           <Filter />
-       
+
           <div id="item-container">{items}</div>
         </div>
       </>
